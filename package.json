@@ -2,7 +2,7 @@
   "name": "practice-react",
   "version": "1.0.0",
   "description": "리액트에서 마이그레이션 해가기",
-  "main": "index.js",
+  "main": "src/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack --mode=production",
