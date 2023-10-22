@@ -31,6 +31,13 @@ const config = {
     new HtmlWebpackPlugin({ template: './src/index.html', filename: 'index.html' }),
     new MiniCssExtractPlugin({ filename: 'style.css', chunkFilename: '[id].css' }),
   ],
+  devServer: {
+    static: {
+      directory: __dirname + '/public',
+    },
+    compress: true,
+    port: 3000,
+  },
   // 이 번들링 파일이 개발모드인지, 프로덕션인지를 알려주기 위한 mode key
   // mode를 CLI 인수로 전달하기 위한 주석처리
   // mode: 'production',
