@@ -46,6 +46,12 @@ package.json의 scripts는 `npm run` 뒤에 scripts의 key에 해당하는 단�
 </html>
 ```
 
+이로 인해서, 개발자 도구의 콘솔 창에서 위와 같은 에러가 뜬 것이었다. 네트워크 탭에서도 index.css의 파일 불러오기는 실패했고, style.css 불러오기에는 성공했다.
+
 웹팩에 대해서 잘 이해 못했던 것 같다. `<script>`와 `<link>`를 통해서 import할 필요가 없던 것이다.
 
 개발 단계에서는 개발 서버를 켜서 진행해야하며, 직접 가져오는 것은 지양해야하는 것이다.
+
+기존의 html에서 파일을 불러오는 태그를 제거했고, 개발 서버 설치를 위한 `webpack-dev-server`를 설치했다.
+
+그리고 `npm run dev`나 `npx webpack serve --mode=development`를 통해 개발서버를 켤 수 있다,
