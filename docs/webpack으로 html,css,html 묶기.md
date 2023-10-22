@@ -21,3 +21,31 @@ package.json의 scripts는 `npm run` 뒤에 scripts의 key에 해당하는 단�
 ```
 
 으로 설정해주면 `npm run build`를 통해 vite나 CRA를 통해 만든 리액트 프로젝트를 빌드할 때처럼 번들링을 진행할 수 있다.
+
+3. webpack의 설정으로 경로가 변경한 것에 대한 오류 처리
+
+`Refused to apply style from 'http://127.0.0.1:5500/dist/index.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
+
+이거 해결하려고 한건데, `index.css`의 파일명을 번들링을 진행하며 `style.css`로 바꾸고 이렇게 진행하니까 html이 다음과 같이 변경되는 문제가 발생했다.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <title>React</title>
+    <script defer="defer" src="bundle.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <button type="button">Button!</button>
+    <script src="index.js"></script>
+  </body>
+</html>
+```
+
+웹팩에 대해서 잘 이해 못했던 것 같다. `<script>`와 `<link>`를 통해서 import할 필요가 없던 것이다.
+
+개발 단계에서는 개발 서버를 켜서 진행해야하며, 직접 가져오는 것은 지양해야하는 것이다.
