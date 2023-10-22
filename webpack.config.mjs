@@ -24,6 +24,14 @@ const config = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
+      {
+        loader: 'babel-loader',
+        exclude: '/node_modules',
+        test: /\.(js|jsx|ts|tsx)$/,
+        options: {
+          rootMode: 'upward',
+        },
+      },
     ],
   },
   // 플러그인 설정
