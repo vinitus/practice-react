@@ -1,5 +1,7 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 
-const btn = document.querySelector('button');
+const rootNode = document.getElementById('root');
 
-btn.addEventListener('click', () => alert('Click!'));
+ReactDOM.createRoot(rootNode).render(React.createElement('div', null, 'Hi, React!'));
