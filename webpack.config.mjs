@@ -32,6 +32,7 @@ const config = {
     new MiniCssExtractPlugin({ filename: 'style.css', chunkFilename: '[id].css' }),
   ],
   // 이 번들링 파일이 개발모드인지, 프로덕션인지를 알려주기 위한 mode key
-  mode: 'production',
+  // mode를 CLI 인수로 전달하기 위한 주석처리
+  // mode: 'production',
 };
 export default config;
