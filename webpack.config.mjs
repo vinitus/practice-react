@@ -40,7 +40,7 @@ const config = (_, args) => {
           test: /\.(js|jsx|ts|tsx)$/,
           options: {
             rootMode: 'upward',
-            presets: isDevelopment && ['@babel/preset-typescript'],
+            presets: isDevelopment ? ['@babel/preset-typescript'] : [],
           },
         },
         !isDevelopment && {
