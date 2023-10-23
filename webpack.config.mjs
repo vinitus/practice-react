@@ -35,18 +35,11 @@ const config = (_, args) => {
           use: [MiniCssExtractPlugin.loader, 'css-loader'],
         },
         {
-          loader: 'babel-loader',
-          exclude: '/node_modules',
-          test: /\.(js|jsx|ts|tsx)$/,
+          test: /\.[jt]sx?$/,
+          loader: 'esbuild-loader',
           options: {
-            rootMode: 'upward',
-            presets: isDevelopment ? ['@babel/preset-typescript'] : [],
+            target: 'es2015',
           },
-        },
-        !isDevelopment && {
-          test: /\.tsx?$/,
-          use: 'ts-loader',
-          exclude: /node_modules/,
         },
       ],
     },
