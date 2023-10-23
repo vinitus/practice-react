@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 
 // 웹팩 설정 Object
 const config = {
-  entry: './src/main.jsx', // entry는 진입점이다.
+  entry: './src/main.tsx', // entry는 진입점이다.
   // 현재 디렉토리가 __dirname에 저장되니까, dist 디렉토리에 bundle.js로 저장
   output: {
     filename: 'bundle.js',
@@ -31,6 +31,15 @@ const config = {
         options: {
           rootMode: 'upward',
         },
+      },
+      {
+        rules: [
+          {
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/,
+          },
+        ],
       },
     ],
   },
