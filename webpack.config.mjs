@@ -48,6 +48,9 @@ const config = {
     new HtmlWebpackPlugin({ template: './src/index.html', filename: 'index.html' }),
     new MiniCssExtractPlugin({ filename: 'style.css', chunkFilename: '[id].css' }),
   ],
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js', '.jsx'], // extension는 import를 할 때 확장자를 생략할 수 있도록하는 옵션
+  },
   devServer: {
     static: {
       directory: __dirname + '/public',
