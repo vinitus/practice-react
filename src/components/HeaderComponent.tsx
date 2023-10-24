@@ -29,7 +29,7 @@ const NavMenuWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 24px;
-  width: 100%;
+  margin-right: auto;
 `;
 
 const Img = styled.img`
@@ -97,10 +97,10 @@ export default function HeaderComponent() {
             검색
             <SearchBtn>검색</SearchBtn>
           </Button>
-          <div>etc 자리</div>
-          <div>etc 자리</div>
-          <div>etc 자리</div>
-          <div>etc 자리</div>
+          <div>깃허브</div>
+          <div>이력서</div>
+          <div>포트폴리오</div>
+          <div>Tistory</div>
         </NavEtcWrapper>
       </Nav>
     </Header>
