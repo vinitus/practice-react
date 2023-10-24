@@ -10,6 +10,7 @@ const Header = styled.header`
   justify-content: space-around;
   z-index: 9999;
   width: 100%;
+  height: 60px;
   font-size: 0.875rem;
   background-color: var(--main-bg);
 `;
