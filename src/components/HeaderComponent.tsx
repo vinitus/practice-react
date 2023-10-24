@@ -79,6 +79,23 @@ const SearchBtn = styled.button`
   border: 1px solid var(--main-font);
 `;
 
+const ContactLink = styled.a`
+  border-radius: 6px;
+  color: var(--main-font);
+  background-color: var(--main-bg);
+  border: 1px solid var(--main-font);
+  font-weight: 500;
+  padding: 0 12px;
+  box-shadow: 0 0 0 1px black;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s ease;
+  line-height: 1rem;
+  height: 34px;
+`;
+
 export default function HeaderComponent() {
   console.log('HeaderComponent');
 
@@ -97,10 +114,18 @@ export default function HeaderComponent() {
             검색
             <SearchBtn>검색</SearchBtn>
           </Button>
-          <div>깃허브</div>
-          <div>이력서</div>
-          <div>포트폴리오</div>
-          <div>Tistory</div>
+          <ContactLink>
+            <div>깃허브</div>
+          </ContactLink>
+          <ContactLink>
+            <div>이력서</div>
+          </ContactLink>
+          <ContactLink>
+            <div>포트폴리오</div>
+          </ContactLink>
+          <ContactLink>
+            <div>Tistory</div>
+          </ContactLink>
         </NavEtcWrapper>
       </Nav>
     </Header>
