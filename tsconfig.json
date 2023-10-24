@@ -7,6 +7,10 @@
     "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@public/*": ["public/*"]
+    },
     "allowSyntheticDefaultImports": true, // import default from '파일'에 대한 허용
     "esModuleInterop": true // CommonJS 모듈 가져오기를 쉽게 지원하기 위한 옵션
   }
