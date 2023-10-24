@@ -1,5 +1,11 @@
 import React from 'react';
+import HeaderComponent from './components/HeaderComponent';
 
 export default function App() {
-  return <div>Hi, React with JSX!</div>;
+  return (
+    <>
+      <HeaderComponent />
+      <div>Hi, React with JSX!</div>
+    </>
+  );
 }
