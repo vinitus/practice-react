@@ -31,6 +31,13 @@ const NavMenuWrapper = styled.div`
   color: var(--main-font);
 `;
 
+const Img = styled.img`
+  background-color: #ffffff;
+  border-radius: 20px;
+  object-fit: none;
+  width: 32px;
+`;
+
 export default function HeaderComponent() {
   console.log('HeaderComponent');
 
@@ -38,7 +45,7 @@ export default function HeaderComponent() {
     <Header>
       <Nav>
         <NavMenuWrapper>
-          <img src={editBtn} alt='' />
+          <Img src={editBtn} />
           <div>메뉴들 자리</div>
           <div>메뉴들 자리</div>
           <div>메뉴들 자리</div>
