@@ -9,12 +9,6 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const tsLoader = {
-  test: /\.tsx?$/,
-  use: 'ts-loader',
-  exclude: /node_modules/,
-};
-
 // 웹팩 설정 function
 const config = {
   entry: './src/main.tsx', // entry는 진입점이다.
@@ -29,6 +23,10 @@ const config = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource', // asset 모듈 사용
       },
       {
         test: /\.[jt]sx?$/,
