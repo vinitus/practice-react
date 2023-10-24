@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import editBtn from '../../public/edit-btn.png';
 
 const Header = styled.header`
   position: sticky;
@@ -37,7 +38,7 @@ export default function HeaderComponent() {
     <Header>
       <Nav>
         <NavMenuWrapper>
-          <div>로고 자리</div>
+          <img src={editBtn} alt='' />
           <div>메뉴들 자리</div>
           <div>메뉴들 자리</div>
           <div>메뉴들 자리</div>
