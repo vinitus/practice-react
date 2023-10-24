@@ -87,11 +87,10 @@ export default function HeaderComponent() {
       <Nav>
         <NavMenuWrapper>
           <Img src={editBtn} />
-          <div>메뉴들 자리</div>
-          <div>메뉴들 자리</div>
-          <div>메뉴들 자리</div>
-          <div>메뉴들 자리</div>
-          <div>메뉴들 자리</div>
+          <div>Home</div>
+          <div>Introduce</div>
+          <div>Calendar</div>
+          <div>Study</div>
         </NavMenuWrapper>
         <NavEtcWrapper>
           <Button>
