@@ -13,6 +13,7 @@ const Header = styled.header`
   height: 60px;
   font-size: 0.875rem;
   background-color: var(--main-bg);
+  color: var(--main-font);
 `;
 
 const Nav = styled.nav`
@@ -29,7 +30,6 @@ const NavMenuWrapper = styled.div`
   align-items: center;
   gap: 24px;
   width: 100%;
-  color: var(--main-font);
 `;
 
 const Img = styled.img`
@@ -37,6 +37,12 @@ const Img = styled.img`
   border-radius: 20px;
   object-fit: none;
   width: 32px;
+`;
+
+const NavEtcWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 12px;
 `;
 
 export default function HeaderComponent() {
@@ -53,6 +59,13 @@ export default function HeaderComponent() {
           <div>메뉴들 자리</div>
           <div>메뉴들 자리</div>
         </NavMenuWrapper>
+        <NavEtcWrapper>
+          <div>etc 자리</div>
+          <div>etc 자리</div>
+          <div>etc 자리</div>
+          <div>etc 자리</div>
+          <div>etc 자리</div>
+        </NavEtcWrapper>
       </Nav>
     </Header>
   );
