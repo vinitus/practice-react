@@ -4,6 +4,10 @@ body {
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  background-color: var(--main-bg);
+  --main-bg: #0a0c10;
+  --main-font: #f0f3f6;
+  margin: 0px;
 }
 
 #root {
