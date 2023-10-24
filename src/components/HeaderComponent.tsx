@@ -94,6 +94,7 @@ const ContactLink = styled.a`
   transition: background-color 0.1s ease;
   line-height: 1rem;
   height: 34px;
+  text-decoration: none;
 `;
 
 export default function HeaderComponent() {
@@ -110,21 +111,22 @@ export default function HeaderComponent() {
           <div>Study</div>
         </NavMenuWrapper>
         <NavEtcWrapper>
-          <Button>
+          {/* <Button>
             검색
             <SearchBtn>검색</SearchBtn>
-          </Button>
-          <ContactLink>
-            <div>깃허브</div>
+          </Button> */}
+          <p>Go To</p>
+          <ContactLink href='"https://github.com/vinitus'>
+            <p>Github</p>
           </ContactLink>
-          <ContactLink>
-            <div>이력서</div>
+          <ContactLink href='https://vinitus.notion.site/488d69fc0a6f4441a5563e547e05ef9a?pvs=4'>
+            <p>이력서</p>
           </ContactLink>
-          <ContactLink>
-            <div>포트폴리오</div>
+          <ContactLink href='https://vinitus.notion.site/488d69fc0a6f4441a5563e547e05ef9a?pvs=4'>
+            <p>포트폴리오</p>
           </ContactLink>
-          <ContactLink>
-            <div>Tistory</div>
+          <ContactLink href='https://mystacks.tistory.com/'>
+            <p>TISTORY</p>
           </ContactLink>
         </NavEtcWrapper>
       </Nav>
