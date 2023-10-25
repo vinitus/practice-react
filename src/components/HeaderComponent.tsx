@@ -19,9 +19,8 @@ const Header = styled.header`
 const Nav = styled.nav`
   display: flex;
   align-items: center;
-  max-width: 1400px;
+  width: calc(100% - 48px);
   margin: 0 auto;
-  width: 100%;
   padding: 4px 24px;
 `;
 
@@ -87,7 +86,6 @@ const ContactLink = styled.a`
   font-weight: 500;
   padding: 0 12px;
   box-shadow: 0 0 0 1px black;
-  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
