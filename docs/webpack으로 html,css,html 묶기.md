@@ -1,4 +1,4 @@
-1. webpack으로 바닐라 js + html,css 번들링하기
+### 1. webpack으로 바닐라 js + html,css 번들링하기
 
 웹팩은 entries를 진입점으로 하여 import를 따라가며 의존성 그래프를 그린다.
 
@@ -6,7 +6,7 @@
 
 output에 설정된 곳에 결과물을 저장한다.
 
-2. package.json에서 `npx webpack`을 대신 실행하기
+### 2. package.json에서 `npx webpack`을 대신 실행하기
 
 원래 `npx webpack`을 통해서 번들링을 진행할 수 있다.
 
@@ -22,7 +22,7 @@ package.json의 scripts는 `npm run` 뒤에 scripts의 key에 해당하는 단�
 
 으로 설정해주면 `npm run build`를 통해 vite나 CRA를 통해 만든 리액트 프로젝트를 빌드할 때처럼 번들링을 진행할 수 있다.
 
-3. webpack의 설정으로 경로가 변경한 것에 대한 오류 처리
+### 3. webpack의 설정으로 경로가 변경한 것에 대한 오류 처리
 
 `Refused to apply style from 'http://127.0.0.1:5500/dist/index.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
 
