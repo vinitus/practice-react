@@ -1,6 +1,6 @@
 # practice-react
 
-순수 HTML, CSS, JavaScript로 이뤄진 프로젝트를 webpack, react, babel, typescript, esbuild, next.js까지 계속 마이그레이션하며 완성해나갈 프로젝트
+순수 HTML, CSS, JavaScript로 이뤄진 프로젝트를 webpack, react, babel, typescript, esbuild까지 계속 마이그레이션하며 완성해나갈 프로젝트
 
 ## 1. webpack 적용하기 - [웹팩 번들링 브랜치](https://github.com/vinitus/practice-react/tree/bundling-with-webpack)
 
@@ -16,7 +16,7 @@
 
 원래 `npx webpack`을 통해서 번들링을 진행할 수 있다.
 
-package.json의 scripts`는 `npm run` 뒤에 scripts의 key에 해당하는 단어를 입력하면, 그 뒤의 명령어를 실행해준다.
+package.json의 `scripts`는 `npm run` 뒤에 scripts의 key에 해당하는 단어를 입력하면, 그 뒤의 명령어를 실행해준다.
 
 ```json
 {
@@ -418,4 +418,3 @@ esbuild는 유형 검사를 수행하지 않으므로 유형을 확인하려면 
 ```
 
 이로써 Go 언어로 작성되어 빠른 속도로 진행되는 esbuild를 기반으로 개발 서버와 빌드를 진행할 수 있다.
-
